@@ -1,0 +1,189 @@
+
+**********************************************************************
+
+Test build
+build project using make
+
+**********************************************************************
+Trying to clean project using make clean
+make clean
+rm -f fastsort.o fastsort
+Trying to build using gcc
+gcc -O -Wall -o fastsort fastsort.c
+
+
+test build PASSED
+ (build project using make)
+
+
+**********************************************************************
+
+Test canary
+100k records
+
+**********************************************************************
+Generating input file
+/u/c/s/cs537-2/ta/tests/1a-contest/generate -s 0 -n 100000 -o /tmp/tmpH7xui3/p/infile
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.237607955933 seconds
+Checking output
+
+
+test canary PASSED
+ (100k records)
+
+
+**********************************************************************
+
+Test contest
+contest
+
+**********************************************************************
+Generating input file
+/u/c/s/cs537-2/ta/tests/1a-contest/generate -s 0 -n 100000 -o /tmp/tmpH7xui3/p/infile
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.24276804924 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.239017963409 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.238866090775 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.238618850708 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.238430023193 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.238801956177 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.239376068115 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.239748954773 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.241545200348 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.236378908157 seconds
+Checking output
+Generating input file
+/u/c/s/cs537-2/ta/tests/1a-contest/generate -s 1 -n 100000 -o /tmp/tmpH7xui3/p/infile
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.238936901093 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.23913192749 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.237880945206 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.236856937408 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.236779928207 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.237249135971 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.236637115479 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.237213134766 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.238857984543 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.238610982895 seconds
+Checking output
+Generating input file
+/u/c/s/cs537-2/ta/tests/1a-contest/generate -s 2 -n 100000 -o /tmp/tmpH7xui3/p/infile
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.239396095276 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.23898601532 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.238931179047 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.238876104355 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.23938202858 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.240453004837 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.236662149429 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.237473011017 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.237354040146 seconds
+Checking output
+Running fastsort
+/tmp/tmpH7xui3/p/fastsort -i /tmp/tmpH7xui3/p/infile -o /tmp/tmpH7xui3/p/outfile
+Fastsort completed in 0.237144947052 seconds
+Checking output
+best   0.236378908157
+median 0.23882997036
+worst  0.24276804924
+
+
+test contest PASSED
+ (contest)
+
+**********************************************************************
+Summary:
+test build PASSED
+ (build project using make)
+
+test canary PASSED
+ (100k records)
+
+test contest PASSED
+ (contest)
+
+Passed 3 of 3 tests.
+Overall 3 of 3

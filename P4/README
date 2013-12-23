@@ -1,0 +1,21 @@
+Kenneth Siu (siu), Zihao Liu(zihao)
+
+HOMEWORK 4
+
+CS537 section 2
+
+AUTHORS:
+Kenneth Siu (siu)
+Zihao Liu (zihao)
+
+Multithreaded webserver (Part 1)
+In this part of project, we created a priority queue to order the request properly based on different policy. The reason why we choose priority queue is that it achieves faster speed. Also, once we build the queue, the rest of job is to determine what is the priority and put it on the queue. 
+
+We also move reading from the network descriptor to the master thread. So each time master thread accpet a connection, it will read from that descriptor first and then store the message into an internal buffer. Eventually, file name can be got from the internal buffer and then used for request handle in the worker threads.
+
+Xv6 (Part 2)
+
+In this part, we created clone/join syscall. In clone syscall, we filled up the stack properly and then pretty much the same as the fork. In join, we just deallocate threads and it's very similar to the wait. Rest of the stuff such as thread library just falls into place by uisng these two syscalls. 
+
+For the condition variable, we use structure with two counters. Basically if thread wait, we increment a num counter in cond_t. When thread signal, we increment the counter curr in cond_t. Then we modify the existing sleep and wakeup a bit such that a thread is only waked up when chanId matches (new field we created)
+

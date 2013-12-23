@@ -1,0 +1,588 @@
+
+**********************************************************************
+
+Test build
+build project using make
+
+**********************************************************************
+Trying to clean project using make clean
+make clean
+rm -f core *.o mysh
+Trying to build project using make
+make
+cc     mysh.c   -o mysh
+
+
+test build PASSED
+ (build project using make)
+
+
+**********************************************************************
+
+Test basic
+run a single command with no arguments
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/basic/in
+
+
+test basic PASSED
+ (run a single command with no arguments)
+
+
+**********************************************************************
+
+Test blank
+an empty batch file
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/blank/in
+
+
+test blank PASSED
+ (an empty batch file)
+
+
+**********************************************************************
+
+Test multiline
+two single line commands
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/multiline/in
+
+
+test multiline PASSED
+ (two single line commands)
+
+
+**********************************************************************
+
+Test parseargs
+a command with an argument
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/parseargs/in
+
+
+test parseargs PASSED
+ (a command with an argument)
+
+
+**********************************************************************
+
+Test parseargs2
+a command with many arguments
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/parseargs2/in
+Failure: ./mysh gave incorrect standard output.
+Expected: "/bin/ls -l --human-readable --no-group -i -p -Q --reverse /u/\ntotal 54K\n2040660101 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"z\"/\n2040660099 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"y\"/\n2040660097 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"x\"/\n2040660095 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"w\"/\n2040660093 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"v\"/\n2040660091 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"u\"/\n2040660089 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"t\"/\n2040660087 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"s\"/\n2040660085 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"r\"/\n2040660083 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"q\"/\n2040660081 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"p\"/\n2040660079 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"o\"/\n2040660077 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"n\"/\n2040660075 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"m\"/\n2040660073 drwxr-xr-x 29 root 2.0K Jul 10  2006 \"l\"/\n2040660071 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"k\"/\n2040660069 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"j\"/\n2040660067 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"i\"/\n2040660065 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"h\"/\n2040660063 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"g\"/\n2040660061 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"f\"/\n2040660059 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"e\"/\n2040660057 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"d\"/\n2040660055 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"c\"/\n2040660053 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"b\"/\n2040660051 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"a\"/\n2040660049 drwxr-xr-x 29 root 2.0K Apr  7  1995 \"_\"/\n"
+Got:      "/bin/ls -l --human-readable --no-group -i -p -Q --reverse /u/\n\346\200\273\347\224\250\351\207\217 54K\n2040660101 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"z\"/\n2040660099 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"y\"/\n2040660097 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"x\"/\n2040660095 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"w\"/\n2040660093 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"v\"/\n2040660091 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"u\"/\n2040660089 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"t\"/\n2040660087 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"s\"/\n2040660085 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"r\"/\n2040660083 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"q\"/\n2040660081 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"p\"/\n2040660079 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"o\"/\n2040660077 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"n\"/\n2040660075 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"m\"/\n2040660073 drwxr-xr-x 29 root 2.0K 7\346\234\210  10 2006 \"l\"/\n2040660071 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"k\"/\n2040660069 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"j\"/\n2040660067 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"i\"/\n2040660065 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"h\"/\n2040660063 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"g\"/\n2040660061 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"f\"/\n2040660059 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"e\"/\n2040660057 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"d\"/\n2040660055 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"c\"/\n2040660053 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"b\"/\n2040660051 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"a\"/\n2040660049 drwxr-xr-x 29 root 2.0K 4\346\234\210   7 1995 \"_\"/\n"
+
+
+test parseargs2 FAILED
+ (a command with many arguments)
+ ./mysh gave incorrect standard output.
+
+
+**********************************************************************
+
+Test parseargs3
+successfully parse indirection and background symbols
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/parseargs3/in
+
+
+test parseargs3 PASSED
+ (successfully parse indirection and background symbols)
+
+
+**********************************************************************
+
+Test exit
+the builtin exit command
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/exit/in
+
+
+test exit PASSED
+ (the builtin exit command)
+
+
+**********************************************************************
+
+Test pwd
+the builtin pwd command
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/pwd/in
+
+
+test pwd PASSED
+ (the builtin pwd command)
+
+
+**********************************************************************
+
+Test cd
+cd with argument
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/cd/in
+
+
+test cd PASSED
+ (cd with argument)
+
+
+**********************************************************************
+
+Test cd2
+cd without argument
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/cd2/in
+
+
+test cd2 PASSED
+ (cd without argument)
+
+
+**********************************************************************
+
+Test whitespace
+serveral commands with extra whitespace
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/whitespace/in
+
+
+test whitespace PASSED
+ (serveral commands with extra whitespace)
+
+
+**********************************************************************
+
+Test whitespace2
+builtin commands with extra whitespace
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/whitespace2/in
+
+
+test whitespace2 PASSED
+ (builtin commands with extra whitespace)
+
+
+**********************************************************************
+
+Test args
+too many arguments to mysh
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/args/in /bogus
+
+
+test args PASSED
+ (too many arguments to mysh)
+
+
+**********************************************************************
+
+Test args2
+invalid batch file path
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /bogus
+
+
+test args2 PASSED
+ (invalid batch file path)
+
+
+**********************************************************************
+
+Test longline
+maximum length line
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/longline/in
+
+
+test longline PASSED
+ (maximum length line)
+
+
+**********************************************************************
+
+Test toolong
+a line that is too long
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/toolong/in
+
+
+test toolong PASSED
+ (a line that is too long)
+
+
+**********************************************************************
+
+Test badprog
+bad executable path as command
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/badprog/in
+
+
+test badprog PASSED
+ (bad executable path as command)
+
+
+**********************************************************************
+
+Test errout
+a called program produces error output, but no errors from the shell itself
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/errout/in
+Failure: ./mysh gave incorrect standard error.
+Expected: "/bin/ls: cannot access /bogus: No such file or directory\n"
+Got:      "/bin/ls: \346\227\240\346\263\225\350\256\277\351\227\256/bogus: \346\262\241\346\234\211\351\202\243\344\270\252\346\226\207\344\273\266\346\210\226\347\233\256\345\275\225\n"
+
+
+test errout FAILED
+ (a called program produces error output, but no errors from the shell itself)
+ ./mysh gave incorrect standard error.
+
+
+**********************************************************************
+
+Test badcd
+invalid path to cd
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/badcd/in
+
+
+test badcd PASSED
+ (invalid path to cd)
+
+
+**********************************************************************
+
+Test badpwd
+invalid arguments to pwd
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/badpwd/in
+
+
+test badpwd PASSED
+ (invalid arguments to pwd)
+
+
+**********************************************************************
+
+Test badexit
+invalid arguments to exit
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/badexit/in
+
+
+test badexit PASSED
+ (invalid arguments to exit)
+
+
+**********************************************************************
+
+Test redirect
+simple redirection using >
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/redirect/in
+
+
+test redirect PASSED
+ (simple redirection using >)
+
+
+**********************************************************************
+
+Test redirect2
+redirection and mutiple arguments
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/redirect2/in
+
+
+test redirect2 PASSED
+ (redirection and mutiple arguments)
+
+
+**********************************************************************
+
+Test badredir
+redirect to invalid path
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/badredir/in
+
+
+test badredir PASSED
+ (redirect to invalid path)
+
+
+**********************************************************************
+
+Test badredir2
+redirect to multiple paths
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/badredir2/in
+
+
+test badredir2 PASSED
+ (redirect to multiple paths)
+
+
+**********************************************************************
+
+Test interactive
+simple command in interactive mode
+
+**********************************************************************
+Running mysh with 1 command: see /u/c/s/cs537-2/ta/tests/2a/interactive/in
+
+/tmp/tmpX0HRXY/p/./mysh
+
+
+test interactive PASSED
+ (simple command in interactive mode)
+
+
+**********************************************************************
+
+Test interactive2
+series of commands in interactive mode
+
+**********************************************************************
+Running mysh with several commands: see /u/c/s/cs537-2/ta/tests/2a/interactive2/in
+
+/tmp/tmpX0HRXY/p/./mysh
+Failure: ./mysh gave incorrect standard error.
+Expected: "expr: syntax error\n"
+Got:      "expr: \350\257\255\346\263\225\351\224\231\350\257\257\n"
+
+
+test interactive2 FAILED
+ (series of commands in interactive mode)
+ ./mysh gave incorrect standard error.
+
+
+**********************************************************************
+
+Test background
+basic background process
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/background/in
+
+
+test background PASSED
+ (basic background process)
+
+
+**********************************************************************
+
+Test background2
+background process followed by wait
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/background2/in
+
+
+test background2 PASSED
+ (background process followed by wait)
+
+
+**********************************************************************
+
+Test background3
+command following wait
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/background3/in
+
+
+test background3 PASSED
+ (command following wait)
+
+
+**********************************************************************
+
+Test background4
+check that wait waits correctly
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/background4/in
+
+
+test background4 PASSED
+ (check that wait waits correctly)
+
+
+**********************************************************************
+
+Test waitnone
+wait with no background jobs
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/waitnone/in
+
+
+test waitnone PASSED
+ (wait with no background jobs)
+
+
+**********************************************************************
+
+Test badwait
+invalid arguments to wait
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/badwait/in
+
+
+test badwait PASSED
+ (invalid arguments to wait)
+
+
+**********************************************************************
+
+Test fun
+test the fun feature (python script)
+
+**********************************************************************
+/tmp/tmpX0HRXY/p/./mysh /u/c/s/cs537-2/ta/tests/2a/fun/in
+
+
+test fun PASSED
+ (test the fun feature (python script))
+
+**********************************************************************
+Summary:
+test build PASSED
+ (build project using make)
+
+test basic PASSED
+ (run a single command with no arguments)
+
+test blank PASSED
+ (an empty batch file)
+
+test multiline PASSED
+ (two single line commands)
+
+test parseargs PASSED
+ (a command with an argument)
+
+test parseargs2 FAILED
+ (a command with many arguments)
+ ./mysh gave incorrect standard output.
+
+test parseargs3 PASSED
+ (successfully parse indirection and background symbols)
+
+test exit PASSED
+ (the builtin exit command)
+
+test pwd PASSED
+ (the builtin pwd command)
+
+test cd PASSED
+ (cd with argument)
+
+test cd2 PASSED
+ (cd without argument)
+
+test whitespace PASSED
+ (serveral commands with extra whitespace)
+
+test whitespace2 PASSED
+ (builtin commands with extra whitespace)
+
+test args PASSED
+ (too many arguments to mysh)
+
+test args2 PASSED
+ (invalid batch file path)
+
+test longline PASSED
+ (maximum length line)
+
+test toolong PASSED
+ (a line that is too long)
+
+test badprog PASSED
+ (bad executable path as command)
+
+test errout FAILED
+ (a called program produces error output, but no errors from the shell itself)
+ ./mysh gave incorrect standard error.
+
+test badcd PASSED
+ (invalid path to cd)
+
+test badpwd PASSED
+ (invalid arguments to pwd)
+
+test badexit PASSED
+ (invalid arguments to exit)
+
+test redirect PASSED
+ (simple redirection using >)
+
+test redirect2 PASSED
+ (redirection and mutiple arguments)
+
+test badredir PASSED
+ (redirect to invalid path)
+
+test badredir2 PASSED
+ (redirect to multiple paths)
+
+test interactive PASSED
+ (simple command in interactive mode)
+
+test interactive2 FAILED
+ (series of commands in interactive mode)
+ ./mysh gave incorrect standard error.
+
+test background PASSED
+ (basic background process)
+
+test background2 PASSED
+ (background process followed by wait)
+
+test background3 PASSED
+ (command following wait)
+
+test background4 PASSED
+ (check that wait waits correctly)
+
+test waitnone PASSED
+ (wait with no background jobs)
+
+test badwait PASSED
+ (invalid arguments to wait)
+
+test fun PASSED
+ (test the fun feature (python script))
+
+Passed 32 of 35 tests.
+Overall 32 of 35

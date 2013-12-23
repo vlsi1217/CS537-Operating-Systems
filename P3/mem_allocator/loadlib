@@ -1,0 +1,2 @@
+LD_LIBRARY_PATH=/u/z/i/zihao/private/CS537/P3/mem_allocator
+export LD_LIBRARY_PATH

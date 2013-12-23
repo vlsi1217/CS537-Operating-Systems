@@ -1,0 +1,56 @@
+
+**********************************************************************
+
+Test build
+build xv6 using make
+
+**********************************************************************
+Trying to clean project using make clean
+make clean
+make: *** 没有规则可以创建目标“clean”。 停止。
+Trying to build project using make
+make
+make: *** 没有指明目标并且找不到 makefile。 停止。
+
+
+test build FAILED
+ (build xv6 using make)
+ file 'bootasm.o' exists after make clean, removing
+ file 'bootmain.o' exists after make clean, removing
+ file 'bio.o' exists after make clean, removing
+ file 'console.o' exists after make clean, removing
+ file 'exec.o' exists after make clean, removing
+ file 'file.o' exists after make clean, removing
+ file 'fs.o' exists after make clean, removing
+ file 'ide.o' exists after make clean, removing
+ file 'ioapic.o' exists after make clean, removing
+ file 'kalloc.o' exists after make clean, removing
+ file 'kbd.o' exists after make clean, removing
+ file 'lapic.o' exists after make clean, removing
+ file 'main.o' exists after make clean, removing
+ file 'mp.o' exists after make clean, removing
+ file 'picirq.o' exists after make clean, removing
+ file 'pipe.o' exists after make clean, removing
+ file 'proc.o' exists after make clean, removing
+ file 'spinlock.o' exists after make clean, removing
+ file 'string.o' exists after make clean, removing
+ file 'swtch.o' exists after make clean, removing
+ file 'syscall.o' exists after make clean, removing
+ file 'sysfile.o' exists after make clean, removing
+ file 'sysproc.o' exists after make clean, removing
+ file 'timer.o' exists after make clean, removing
+ file 'trapasm.o' exists after make clean, removing
+ file 'trap.o' exists after make clean, removing
+ file 'uart.o' exists after make clean, removing
+ file 'vectors.o' exists after make clean, removing
+ file 'vm.o' exists after make clean, removing
+ file 'multiboot.o' exists after make clean, removing
+ file 'data.o' exists after make clean, removing
+ file 'bootother.o' exists after make clean, removing
+ file 'initcode.o' exists after make clean, removing
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+Skipped 12 tests.
+To keep testing after failing a test, use flag '-c' or '--continue'

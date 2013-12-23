@@ -1,0 +1,9 @@
+Authors: Zihao Liu(zihao) , Kenneth Siu(siu)
+
+For the shell, I use the concept prof Remzi discussed in class. For non-built-in command, I create child process and use exec to execute it. For built in commnad, I just call the appropriate system call provided by Unix. 
+
+For the scheduler, I change the scheduler function in proc.c. I added two syscall setticket and getpinfo. I added pstat struct and changed proc struct.
+
+I also changed how trap work to add ticks and give more time slice for low priority jobs.
+
+The graph of 2b will be in this directory called graph.jpg

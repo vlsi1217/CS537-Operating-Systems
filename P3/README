@@ -1,0 +1,28 @@
+HOMEWORK 3
+
+AUTHORS:
+Kenneth Siu (siu)
+Zihao Liu (zihao)
+
+Memory Allcation (Part 1)
+For this one, we implemented one list. The size variable kept track of whether
+or not this list was free or not. This free variable in our struct could be different
+from the actual size of the block if there was no room to fit the next header.
+Our program seems to pass all tests.
+
+
+Xv6 (Part 2)
+We changed a lot in trap.c, exec.c, syscall.c, proc.c, proc.h, vm.c
+
+In proc.h, we added a new variable to keep track of our stack size.
+
+In proc.c, we changed growproc to account for the heap size and when it would reach the stack
+
+In vm.c, we changed alloc and copyuvm to make the first page invalid.
+
+In trap.c, we automatically grew the stack when it hit its limit.
+
+In exec.c we changed the stack so that it started from USERTOP.
+
+In syscall.c, we changed the bounds so that when variables are passed into the stack,
+it can handle it accordingly.
